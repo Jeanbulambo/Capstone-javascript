@@ -12,7 +12,7 @@ body:focus {
 }
 .mainwrapper {
   width: 100%;
-  background-image: url(http://4.bp.blogspot.com/-DZ3no-gZSXY/UJVeCusQ9YI/AAAAAAAAAQ8/3X9Ylq002sc/s4000/A_large_blank_world_map_with_oceans_marked_in_blue.png);
+  background-image: url("./assets/capstone-backgr.png");
   height: 1500px;
   background-position: center;
   background-repeat: no-repeat;
