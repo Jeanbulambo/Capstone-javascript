@@ -1,4 +1,5 @@
 import './style.css';
+
 const worldinfo =[
 {
 "name": "Afghanistan",
@@ -20505,6 +20506,5 @@ const worldinfo =[
 const body = document.querySelector('body');
 const section = dococument.createElement('section');
 body.append(section);
-section.innerHTML = ' />';
-
+section.innerHTML = '';
 

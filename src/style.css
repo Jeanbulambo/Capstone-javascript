@@ -1,4 +1,20 @@
-img {
-width: 100px;
-height: 100px;
+import {font-family: 'Ibarra Real Nova', serif;
+font-family: 'Nova Script', cursive;
+font-family: 'Open Sans', sans-serif; }
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+body:focus {
+  outline: none;
+}
+.mainwrapper {
+  width: 100%;
+  background-image: url(http://4.bp.blogspot.com/-DZ3no-gZSXY/UJVeCusQ9YI/AAAAAAAAAQ8/3X9Ylq002sc/s4000/A_large_blank_world_map_with_oceans_marked_in_blue.png);
+  height: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
