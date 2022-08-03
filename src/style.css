@@ -77,3 +77,66 @@ body {
   height: max-content;
   color: var(--svg-color);
 }
+
+#coutriesShow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.card {
+  width: 40%;
+  height: 70vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.flag-image {
+  width: 500px;
+  height: 27vh;
+}
+
+.flag {
+  width: 35%;
+  height: 30vh;
+}
+
+.comments {
+  width: 40%;
+  margin-top: 24px;
+  margin-left: 200px;
+}
+
+.comment {
+  margin-bottom: 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+button {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 22px;
+  width: 160px;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  padding-right: 120px;
+  gap: 15px;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 22px;
+}
+
+.country-name .population {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 22px;
+}
