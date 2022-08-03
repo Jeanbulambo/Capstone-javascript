@@ -1,4 +1,79 @@
-img {
-width: 100px;
-height: 100px;
+/* import {font-family: 'Ibarra Real Nova', serif;
+font-family: 'Nova Script', cursive;
+font-family: 'Open Sans', sans-serif; } */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+
+body[data-theme="light"] {
+  --nav-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 98%);
+  --txt-color: hsl(197, 15%, 18%);
+  --border-color: hsl(0, 0%, 95%);
+  --el-txt: rgb(105, 105, 105);
+  --svg-color: "initial";
+}
+
+body[data-theme="dark"] {
+  --nav-bg-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --txt-color: hsl(0, 0%, 100%);
+  --border-color: hsl(207, 27%, 17%);
+  --el-txt: rgb(194, 193, 193);
+  --svg-color: #fff;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bg-color);
+  transition: 0.3s;
+  overflow: auto;
+}
+
+.fa-angle-double-up {
+  width: 17px;
+  color: var(--txt-color);
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+}
+
+.nav {
+  width: 100%;
+  background-color: var(--nav-bg-color);
+  display: flex;
+  justify-content: space-between;
+  color: var(--txt-color);
+  padding: 15px 60px;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 3px solid var(--border-color);
+  transition: 0.3s;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.logoStyle {
+  width: 23%;
+}
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: var(--txt-color);
+  cursor: pointer;
+}
+
+.fa-moon {
+  width: 13px;
+  margin: 2px 6px 0 0;
+  height: max-content;
+  color: var(--svg-color);
 }
