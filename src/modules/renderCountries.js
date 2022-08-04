@@ -1,9 +1,10 @@
-import getCountries from './api.js'
+import getCountries from './api.js';
+
 export default async function renderCountries() {
-    let country = await getCountries();
-    let card = '';
-    country.forEach(country => {
-        let htmlSegment = `
+  const country = await getCountries();
+  let card = '';
+  country.forEach((country) => {
+    const htmlSegment = `
         <div class="card" data-info=${country.alpha2Code}>
             <div class="flag">
                 <img class="flag-image" src=${country.flag} alt=${country.name} />
@@ -28,7 +29,7 @@ export default async function renderCountries() {
             </div>
         </div>
         `;
-        card += htmlSegment;
-    });
-    $('#coutriesShow').append(card);
+    card += htmlSegment;
+  });
+  $('#coutriesShow').append(card);
 }

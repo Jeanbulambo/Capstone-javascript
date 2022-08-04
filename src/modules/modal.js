@@ -1,10 +1,10 @@
-import getCountries from "./api.js";
+import getCountries from './api.js';
 
-export default async function modal () {
-    let item = await getCountries();
-    let modal = "";
-    item.forEach(item => {
-        let popUp = `
+export default async function modal() {
+  const item = await getCountries();
+  let modal = '';
+  item.forEach((item) => {
+    const popUp = `
             <div class="modal-cont">
                 <div class="back-btn">
                     <svg
@@ -48,7 +48,7 @@ export default async function modal () {
                 </div>
             </div>        
         `;
-        modal += popUp;
-    });
-    $('#popupShow').append(modal);
+    modal += popUp;
+  });
+  $('#popupShow').append(modal);
 }
