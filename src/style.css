@@ -60,7 +60,7 @@ body {
 }
 
 .logoStyle {
-  width: 23%;
+  width: 10%;
 }
 
 .theme {
@@ -110,12 +110,11 @@ body {
 .comments {
   width: 40%;
   margin-top: 24px;
-  margin-left: 200px;
 }
 
 .comment {
   margin-bottom: 12px;
-  margin-left: 10px;
+  margin-left: 60px;
   border-radius: 4px;
 }
 
@@ -123,6 +122,8 @@ button {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 22px;
   width: 160px;
+  border-radius: 2px;
+  border: ;
 }
 
 .likes {
@@ -130,18 +131,57 @@ button {
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
-  padding-right: 120px;
+  padding-right: 40px;
   gap: 15px;
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Nova Script', cursive;
   font-size: 22px;
 }
 
 .country-name .population {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Nova Script', cursive;
   font-size: 22px;
 }
 
 .p {
   display: flex;
   flex-direction: column;
+}
+
+.countries-title {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.division {
+display: flex;
+}
+/* popup style */
+
+.modal-cont {
+/* display: flex;
+flex-direction: column; */
+border: 1px solid red;
+  gap: 12px;
+width: 100%;
+}
+
+.back-btn{
+width: 5%;
+}
+
+.flag-imagepopup {
+border: 1px solid red;
+object-fit: cover;
+width: 850px;
+margin-left: 345px;
+}
+
+.flag-popUp {
+  margin-left: 340px;
+  width: 95%;
+  height: 30vh;
+}
+
+.right {
+margin-left: 730px;
 }

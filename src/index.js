@@ -1,11 +1,11 @@
-import logo from './assets/logo.png';
+import logoAr from './assets/logoAr.png';
 import './style.css';
 import renderCountries from './modules/renderCountries.js';
 import modal from './modules/modal.js';
 
 const image = document.getElementById('imageLogo');
 const imageLogo = document.createElement('img');
-imageLogo.src = logo;
+imageLogo.src = logoAr;
 imageLogo.className = 'logoStyle';
 image.appendChild(imageLogo);
 
@@ -16,21 +16,3 @@ $('.theme').click(() => {
 
 renderCountries();
 modal();
-
-// ===== API ====
-
-// const countryName = [];
-// const dataCountry = [];
-
-// fetch('https://restcountries.com/v2/all')
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//     displayBlocks(data);
-//     displayPopup(data);
-//   });
-// console.log(dataCountry);
-
-// const displayBlocks = (data) => {
-//   const card = data
-//     .map((item) => `

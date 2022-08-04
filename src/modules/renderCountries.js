@@ -18,7 +18,7 @@ export default async function renderCountries() {
             </div>
             <div class="likes">
                 <p class="p">
-                    <span class="material-symbols-outlined">
+                    <span id="heart" class="material-symbols-outlined">
                         favorite
                     </span> 
                     like

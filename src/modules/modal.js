@@ -24,8 +24,8 @@ export default async function modal() {
                     </svg>
                     <button>Back</button>
                 <div class="division>
-                    <div class="flag">
-                        <img class="flag-image" src=${item.flag} alt=${item.name} />
+                    <div class="flag-popUp">
+                        <img class="flag-imagepopup" src=${item.flag} alt=${item.name} />
                     </div>
                     <div class="right">
                         <div class="country-name">${item.name}</div>
