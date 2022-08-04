@@ -25,7 +25,7 @@ export default async function renderCountries() {
                 </p>
             </div>
             <div class="comment"> 
-                <button type="button" class="">Comments</button>
+                <button type="button" class="card-button">Comments</button>
             </div>
         </div>
         `;

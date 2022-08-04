@@ -6,28 +6,10 @@ export default async function modal() {
   item.forEach((item) => {
     const popUp = `
             <div class="modal-cont">
-                <div class="back-btn">
-                    <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="caret-left"
-                    class="svg-inline--fa fa-caret-left fa-w-6"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 192 512"
-                    >
-                        <path
-                            fill="currentColor"
-                            d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
-                        ></path>
-                    </svg>
-                    <button>Back</button>
-                </div>
-                <div class="division>
-                    <div class="flag-popUp">
+                <div class="modal-popup">
+                     <div class="flag-popUp">
                         <img class="flag-imagepopup" src=${item.flag} alt=${item.name} />
-                    </div>
+                     </div>
                     <div class="right">
                         <div class="country-name">${item.name}</div>
                         <p class="expl">
@@ -54,23 +36,26 @@ export default async function modal() {
                         <p class="expl">
                             Code: <span class="temp">${item.numericCode}</span>
                         </p>
-                    </div>
-                    <div class="comment">
-                        <h2>Comments</h2>
+                         <button class="back-button">Home Page</button>
+
+                    <div class="comment-form">
+                        <h3 class="comment-title">Comments</h3>
                         <div id="comments">
+                            <p> Jean</p>
                             <p>name</p>
-                            <p></p>
+                            <p> World</p>
                         </div>
                     </div>
                     <div class="add-comment">
-                        <h2>Add a Comment</h2>
+                        <h3 class="comment-title">Add a Comment</h3>
                         <form class="form">
                             <input type="text" placeholder="Your name">
-                            <textarea type="text"></textarea>
+                            <textarea type="text" > Your comments</textarea>
                             <button type="button" class="submit">Comment</button>
                         </form>
                     </div>
                 </div>
+               </div>
             </div>
         `;
         modal += popUp;
