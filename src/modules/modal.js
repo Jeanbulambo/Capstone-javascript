@@ -23,6 +23,7 @@ export default async function modal() {
                         ></path>
                     </svg>
                     <button>Back</button>
+                </div>
                 <div class="division>
                     <div class="flag-popUp">
                         <img class="flag-imagepopup" src=${item.flag} alt=${item.name} />
@@ -44,11 +45,35 @@ export default async function modal() {
                         <p class="expl">
                             Capital: <span class="temp">${item.capital}</span>
                         </p>
+                        <p class="expl">
+                            Area: <span class="temp">${item.area}</span>
+                        </p>
+                        <p class="expl">
+                            Time-Zone: <span class="temp">${item.timezones}</span>
+                        </p>
+                        <p class="expl">
+                            Code: <span class="temp">${item.numericCode}</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h2>Comments</h2>
+                        <div id="comments">
+                            <p>name</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="add-comment">
+                        <h2>Add a Comment</h2>
+                        <form class="form">
+                            <input type="text" placeholder="Your name">
+                            <textarea type="text"></textarea>
+                            <button type="button" class="submit">Comment</button>
+                        </form>
                     </div>
                 </div>
-            </div>        
+            </div>
         `;
-    modal += popUp;
-  });
-  $('#popupShow').append(modal);
+        modal += popUp;
+    });
+    $('#popupShow').append(modal);
 }
