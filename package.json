@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Krishnabot/Capstone-javascript#readme",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
     "lodash": "^4.17.21"
   },
   "jest": {
