@@ -87,9 +87,8 @@ body {
 }
 
 .card {
-  width: 40%;
-  height: 70vh;
-  padding: 24px;
+  width: 20%;
+  padding: 4px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -98,12 +97,13 @@ body {
 }
 
 .flag-image {
-  width: 500px;
+  width: 100%;
   height: 27vh;
 }
 
 .flag {
-  width: 35%;
+  margin: auto;
+  width: 95%;
   height: 30vh;
 }
 
@@ -139,4 +139,9 @@ button {
 .country-name .population {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 22px;
+}
+
+.p {
+  display: flex;
+  flex-direction: column;
 }
