@@ -1,36 +1,27 @@
-import logo from './assets/logo.png';
 import './style.css';
-import renderCountries from './modules/renderCountries.js';
-import modal from './modules/modal.js';
+import loadShows from './loadShow.js';
+import { addNewLike, countLikes, likeUpdate } from './Likes.js';
+import commentsPopUp from './commentsPopup.js';
+import countShows from './showsCounter.js';
 
-const image = document.getElementById('imageLogo');
-const imageLogo = document.createElement('img');
-imageLogo.src = logo;
-imageLogo.className = 'logoStyle';
-image.appendChild(imageLogo);
+loadShows().then((value) => {
+  const likesButtons = document.querySelectorAll('.like');
+  likesButtons.forEach((show) => {
+    show.addEventListener('click', () => {
+      const id = show.parentElement.parentElement.children[3].innerHTML;
+      const likes = parseInt(countLikes(id), 10) + 1;
+      show.parentElement.parentElement.children[2].children[1].innerHTML = `${likes} likes`;
+      addNewLike(id);
+      likeUpdate(id, likes);
+    });
+  });
 
-$('.theme').click(() => {
-  const currTheme = $('body').attr('data-theme');
-  $('body').attr('data-theme', `${currTheme === 'light' ? 'dark' : 'light'}`);
+  const commentsButtons = document.querySelectorAll('.comments');
+  commentsButtons.forEach((show) => {
+    show.addEventListener('click', () => {
+      const id = show.parentElement.children[3].innerHTML;
+      commentsPopUp(value, id);
+    });
+  });
+  document.querySelector('#counter').innerHTML = `(${countShows(value)})`;
 });
-
-renderCountries();
-modal();
-
-// ===== API ====
-
-// const countryName = [];
-// const dataCountry = [];
-
-// fetch('https://restcountries.com/v2/all')
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//     displayBlocks(data);
-//     displayPopup(data);
-//   });
-// console.log(dataCountry);
-
-// const displayBlocks = (data) => {
-//   const card = data
-//     .map((item) => `
