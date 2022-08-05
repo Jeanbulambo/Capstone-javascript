@@ -1,5 +1,5 @@
 import './style.css';
-import loadShows from './loadShow';
+import loadShows from './loadShow.js';
 import { addNewLike, countLikes, likeUpdate } from './Likes.js';
 import commentsPopUp from './commentsPopup.js';
 import countShows from './showsCounter.js';
