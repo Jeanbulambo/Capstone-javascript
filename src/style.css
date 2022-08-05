@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+  background-color: rgb(49, 62, 72);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+}
+
+.s-between {
+  justify-content: space-between;
+}
+
+.s-around {
+  justify-content: space-around;
+}
+
+header {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 5%;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-right: 5%;
+  width: 50px;
+  height: 50px;
+  background: url(https://toppng.com/uploads/preview/movies-clipart-11550721226fhbztgpnlz.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#cards {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.card img {
+  width: 327px;
+  height: 350px;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #313e48;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.desc {
+  width: 78%;
+  font-size: 0.8rem;
+}
+
+.red {
+  color: red;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.white {
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.comments {
+  height: 40px;
+  margin-left: auto;
+}
+
+.btn {
+  background-color: #3c4e5c;
+  color: #fff;
+  border: 1px solid #192833;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #192833;
+  color: #fff;
+  border: 1px solid #3c4e5c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.showId {
+  display: none;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  overflow: auto;
+}
+
+.modal-content {
+  width: 80%;
+  height: auto;
+  margin: 5% auto;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgb(24, 4, 43);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+.fa-window-close {
+  font-size: 2em;
+  padding: 20px;
+  color: rgb(68, 173, 68);
+}
+
+.fa-window-close:hover {
+  color: rgb(136, 141, 71);
+}
+
+.popup-img {
+  width: 25%;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+#comment-form {
+  width: 50%;
+  margin: 10px auto;
+  background-color: rgb(43, 137, 226);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+#showDesc {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.form {
+  justify-content: center;
+}
+
+.fa-comment {
+  color: rgb(132, 223, 166);
+}
+
+button {
+  width: auto;
+  color: rgb(35, 155, 24);
+  font-weight: bold;
+  background-color: rgb(187, 179, 179);
+  padding: 5px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+button:hover {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(231, 160, 231);
+  padding: 6px;
+}
+
+h1,
+h2,
+h3,
+h4 h5,
+h6 {
+  font-weight: bold;
+}
+
+.font-w-bold {
+  font-weight: bold;
+}
+
+.comments-list-body {
+  background: rgb(224, 228, 233);
+  box-shadow: 0 2px 4px 0 rgb(54, 54, 54);
+  padding: 10px;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+  height: 10%;
+  overscroll-behavior: contain;
+}
+
+.vierwerCommentList:nth-child(even) {
+  background: #fbfdff;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  border-radius: 2px;
+  position: fixed;
+  padding: 15px;
+  color: rgb(2, 2, 2);
+  background-color: rgb(207, 206, 206);
+  display: flex;
+  justify-content: center;
+}
+
+.foot-note {
+  font-weight: bold;
+  width: 100%;
+}
