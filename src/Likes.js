@@ -1,7 +1,7 @@
 let Likes = [];
 const loadLikes = async () => {
   const getLikesData = async () => {
-    const request = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/M3YWGWQqUrOVctHXGrPW/likes/');
+    const request = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/M3YWGWQqUrOActHXGrPW/likes/');
     const data = await request.json();
     return data;
   };
@@ -44,7 +44,7 @@ const likeUpdate = (showId, newValue) => {
 
 const addNewLike = (showId) => {
   const SentToApi = async () => {
-    const request = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/M3YWGWQqUrOVctHXGrPW/likes/', {
+    const request = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/M3YWGWQqUrOActHXGrPW/likes/', {
       method: 'POST',
       body: JSON.stringify({
         item_id: `${showId}`,
