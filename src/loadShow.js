@@ -1,5 +1,5 @@
-import addShow from './addShowToDom.js';
-import { loadLikes, countLikes } from './Likes.js';
+import addShow from './addShowToDom';
+import { loadLikes, countLikes } from './Likes';
 
 const loadShows = async () => {
   const showsContainer = document.getElementById('cards-container');

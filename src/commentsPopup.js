@@ -1,5 +1,5 @@
-import { addMovieComment, fetchComment } from './comment-display.js';
-import totalComments from './comment-count.js';
+import { addMovieComment, fetchComment } from './comment-display';
+import totalComments from './comment-count';
 
 const showModal = document.querySelector('#modal-section');
 const popModal = document.createElement('div');

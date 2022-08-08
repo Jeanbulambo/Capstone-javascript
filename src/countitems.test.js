@@ -1,4 +1,4 @@
-import countShows from './showsCounter.js';
+import countShows from './showsCounter';
 
 let shows = {};
 

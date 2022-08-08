@@ -1,8 +1,8 @@
 import './style.css';
-import loadShows from './loadShow.js';
-import { addNewLike, countLikes, likeUpdate } from './Likes.js';
-import commentsPopUp from './commentsPopup.js';
-import countShows from './showsCounter.js';
+import loadShows from './loadShow';
+import { addNewLike, countLikes, likeUpdate } from './Likes';
+import commentsPopUp from './commentsPopup';
+import countShows from './showsCounter';
 
 loadShows().then((value) => {
   const likesButtons = document.querySelectorAll('.like');
